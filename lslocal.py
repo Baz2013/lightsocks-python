@@ -7,7 +7,10 @@ from lightsocks.local import LsLocal
 from lightsocks.utils import config as lsConfig
 from lightsocks.utils import net
 
-
+def for_test():
+    print("test...")
+    
+    
 def run_server(config: lsConfig.Config):
     loop = asyncio.get_event_loop()
 
@@ -147,3 +150,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    for_test()
